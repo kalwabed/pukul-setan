@@ -119,6 +119,10 @@ h3 {
     top: -13px;
 }
 
+.timer {
+    font-size: 30px;
+}
+
 .modal {
     display: none;
     position: fixed;

@@ -54,13 +54,13 @@ function getLevel() {
         if (element) {
             if (level[i].value == '1') {
                 // mudah
-                timeRand = randomWaktu(800, 1800)
+                timeRand = randomWaktu(800, 1000)
             } else if (level[i].value == '2') {
                 // sedang
-                timeRand = randomWaktu(700, 1200)
-            } else if (level[i].value == '1') {
+                timeRand = randomWaktu(700, 900)
+            } else if (level[i].value == '3') {
                 // sulit
-                timeRand = randomWaktu(500, 900)
+                timeRand = randomWaktu(350, 550)
             }
         }
     }
@@ -108,6 +108,7 @@ function countDown() {
 function stop() {
     msetan.textContent = ''
     selesai = true
-    clearInterval(timer)
+    clearTimeout(timer)
+    timeRand = 0
     document.querySelector('.timer').innerHTML = '00:00'
 }
