@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pukul Setan</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Mono|Lacquer&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div>
+        <label class="nama">
+            <b> Waktu : </b>
+            <b> <span class="timer">00:00 </span> </b>
+        </label>
+        <label class="level">
+            <input type="radio" id="levels" name="levels" value="1" checked="checked">Mudah</input>
+            <input type="radio" id="levels" name="levels" value="2">Sedang</input>
+            <input type="radio" id="levels" name="levels" value="3">Sulit</input>
+        </label>
+        <label class="skor">
+            <b> Skor : <span class="papan-skor">0</span> </b>
+        </label>
+    </div>
+    <div style="text-align: center;">
+        <button type="button" class="myButton" onclick="mulai()">START</button>
+        <button type="button" class="myButton2" onclick="stop()">STOP</button>
+    </div>
+
+    <div class="container">
+        <h3>Me on quarantine,<div class="msetan"></div>
+        </h3>
+        <div class="awan">
+            <div class="setan"></div>
+        </div>
+        <div class="awan">
+            <div class="setan"></div>
+        </div>
+        <div class="awan">
+            <div class="setan"></div>
+        </div>
+        <div class="awan">
+            <div class="setan"></div>
+        </div>
+        <div class="awan">
+            <div class="setan"></div>
+        </div>
+        <div class="awan">
+            <div class="setan"></div>
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Waktu Selesai!!</p>
+        </div>
+    </div>
+
+    <audio src="audio/Small_Glass_Pane_Shatter.mp3" class="gasak"></audio>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

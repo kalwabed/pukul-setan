@@ -1,0 +1,158 @@
+:root {
+    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+}
+
+h1,
+h3 {
+    font-size: 40px;
+    text-align: center;
+    font-family: Arial;
+    margin: auto;
+}
+
+.skor {
+    margin-left: 27%;
+    font-size: 20px;
+    text-align: right;
+    font-family: 'PT Mono';
+}
+
+.level {
+    margin-left: 23%;
+    font-size: 20px;
+    text-align: right;
+    font-family: 'PT Mono';
+}
+
+.nama {
+    margin-left: 50px;
+    font-size: 20px;
+    text-align: left;
+    font-family: 'PT Mono';
+}
+
+.myButton {
+    margin-top: 15px;
+    box-shadow: inset 3px 0px 14px -3px #f2fadc;
+    background: linear-gradient(to bottom, #dbe6c4 5%, #9ba892 100%);
+    background-color: #dbe6c4;
+    border-radius: 6px;
+    border: 1px solid #b2b8ad;
+    display: inline-block;
+    cursor: pointer;
+    color: #757d6f;
+    font-family: Arial;
+    font-size: 23px;
+    font-weight: bold;
+    padding: 15px 57px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #ced9bf;
+}
+
+.myButton2 {
+    margin-top: 15px;
+    box-shadow: inset 3px 0px 14px -3px #f2fadc;
+    background: linear-gradient(to bottom, #dbe6c4 5%, #9ba892 100%);
+    background-color: #dbe6c4;
+    border-radius: 6px;
+    border: 1px solid #b2b8ad;
+    display: inline-block;
+    cursor: pointer;
+    color: #757d6f;
+    font-family: Arial;
+    font-size: 23px;
+    font-weight: bold;
+    padding: 15px 57px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #ced9bf;
+}
+
+.myButton:hover,
+.myButton2:hover {
+    background: linear-gradient(to bottom, #9ba892 5%, #dbe6c4 100%);
+    background-color: #9ba892;
+}
+
+.myButton:active,
+.myButton2:active {
+    position: relative;
+    top: 1px;
+}
+
+.container {
+    width: 600px;
+    margin: auto;
+    cursor: url(../img/punch.png), auto;
+}
+
+.awan {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+}
+
+.awan::after {
+    content: '';
+    display: block;
+    width: 200px;
+    height: 100px;
+    background: url(../img/cloud.png) bottom center no-repeat;
+    background-size: 65%;
+    position: absolute;
+    bottom: -45px;
+}
+
+.setan {
+    width: 100%;
+    height: 100%;
+    background: url(../img/giant.png) bottom center no-repeat;
+    background-size: 60%;
+    position: absolute;
+    top: 100px;
+    /* edit kecepatan disini  */
+    transition: top 0.5s;
+}
+
+.awan.muncul .setan {
+    top: -13px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+}
+
+.modal-content {
+    font-size: 20px;
+    text-align: center;
+    font-family: 'PT Mono';
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
